@@ -8,5 +8,7 @@ Covid-19 pandemic has disrupted the entire world, maybe thats the beginning of n
 #Team Ether Bot
 
 Aryan Maurya (https://github.com/aryanmaurya1)
+
 Shivam Singh (https://linkedin.com/in/shivamsingh361)
+
 Varun Agrawal (https://linkedin.com/in/vrnvav97)
