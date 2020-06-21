@@ -1,0 +1,35 @@
+<html>
+  <head>
+    {%load static%}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="">
+    <link href={% static 'css/main.css' %} rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href={% static 'favicon.ico'%}/>
+  </head>
+  <body>
+   
+    <div class="s003">
+    <div class="navbar", name='navbarx'>
+        <h1>{{district}}</h1>
+        <a href="/"><button>Back</button></a>
+    </div>
+    <div class="inner-form" style="text-align: center;">
+      <p><b>Active</b> = {{covid.active}} <br>
+      <b>Decreased</b> = {{covid.deceased}} <br>
+      <b>Recovered</b> = {{covid.recovered}}</p>
+      <p>Data last updated on = {{covid.date}}</p>
+    </div>
+    </div>
+    {% if status == 'green' %}
+        <script type="text/javascript" src={% static 'js/greenscript.js' %}></script>
+    {% elif status == 'orange'%}
+        <script type="text/javascript" src={% static 'js/orangescript.js' %}></script>
+    {% elif status == 'red'%}
+        <script type="text/javascript" src={% static 'js/redscript.js' %}></script>    
+    {% else %}
+        <script type="text/javascript" src={% static 'js/whitescript.js' %}></script>
+    {% endif %}
+  </body>
+</html>
